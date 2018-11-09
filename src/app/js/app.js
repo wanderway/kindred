@@ -3,6 +3,7 @@
         init: function () {
             langBar.init();
             ourBrands.init();
+            Sliders.init();
         }
     };
 
@@ -38,6 +39,18 @@
                     brandsToggle.classList.remove('header__navigation-item--active-magenta');
 
                 }
+            });
+        }
+    };
+
+    const Sliders = {
+        init: function () {
+            this.initUpperBlockSlider();
+        },
+        initUpperBlockSlider: function () {
+            $('.upper-block__slider').slick({
+                dots: true,
+                arrows: false,
             });
         }
     };

@@ -1,29 +1,29 @@
 {% extends "layout/base.twig" %}
 
-{#{% block body %}#}
-    {#<main class="main-content">#}
-        {#{% include "components/upper-block.twig" with#}
-            {#{#}
-                {#'slider' : true,#}
-                {#'slides' : [#}
-                {#{#}
-                    {#'title' : 'hello world',#}
-                    {#'description' : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae distinctio, ducimus eius esse est eveniet explicabo, incidunt iure maiores modi molestias nesciunt odit quibusdam quos saepe, ullam? Corporis, molestias.',#}
-                    {#'background_url' : 'https://www.google.by/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiewurknsfeAhXC2CwKHUs0DfMQjRx6BAgBEAU&url=https%3A%2F%2Fwww.w3schools.com%2Fw3css%2Fw3css_images.asp&psig=AOvVaw2gRwKKS7YRiHAqEjcD-sqf&ust=1541850481637369'#}
-                {#},#}
-                {#{#}
-                    {#'title' : 'hello world',#}
-                    {#'description' : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae distinctio, ducimus eius esse est eveniet explicabo, incidunt iure maiores modi molestias nesciunt odit quibusdam quos saepe, ullam? Corporis, molestias.',#}
-                    {#'background_url' : 'https://www.google.by/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiewurknsfeAhXC2CwKHUs0DfMQjRx6BAgBEAU&url=https%3A%2F%2Fwww.w3schools.com%2Fw3css%2Fw3css_images.asp&psig=AOvVaw2gRwKKS7YRiHAqEjcD-sqf&ust=1541850481637369'#}
-                {#},#}
-                {#{#}
-                    {#'title' : 'hello world',#}
-                    {#'description' : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae distinctio, ducimus eius esse est eveniet explicabo, incidunt iure maiores modi molestias nesciunt odit quibusdam quos saepe, ullam? Corporis, molestias.',#}
-                    {#'background_url' : 'https://www.google.by/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiewurknsfeAhXC2CwKHUs0DfMQjRx6BAgBEAU&url=https%3A%2F%2Fwww.w3schools.com%2Fw3css%2Fw3css_images.asp&psig=AOvVaw2gRwKKS7YRiHAqEjcD-sqf&ust=1541850481637369'#}
-                {#},#}
-            {#]#}
+{% block body %}
+    <main class="main-content">
+        {% include "components/upper-block.twig" with
+            {
+                'slider' : true,
+                'slides' : [
+                {
+                    'title' : 'Transfroming Gambling',
+                    'description' : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet.',
+                    'background_url' : '../images/HeroImage.png'
+                },
+                {
+                    'title' : 'Transfroming Gambling',
+                    'description' : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet.',
+                    'background_url' : '../images/HeroImage.png'
+                },
+                {
+                    'title' : 'Transfroming Gambling',
+                    'description' : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet.',
+                    'background_url' : '../images/HeroImage.png'
+                },
+            ]
 
-            {#} %}#}
-    {#</main>#}
-{#{% endblock %}#}
+            } %}
+    </main>
+{% endblock %}
 

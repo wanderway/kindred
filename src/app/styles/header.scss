@@ -1,5 +1,10 @@
 .header {
-  position: relative;
+  position: fixed;
+
+  width: 100%;
+
+  background: #ffffff;
+
 
   &__wrapper {
     max-height: 90px;
@@ -85,7 +90,6 @@
     flex-wrap: wrap;
 
     color: #ffffff;
-
   }
 
   &__brands--opened .header__brands-item {

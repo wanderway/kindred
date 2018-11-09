@@ -1,0 +1,75 @@
+.upper-block {
+
+  &__slider {
+    position: relative;
+
+    padding: 0;
+
+    overflow: hidden;
+
+  }
+
+  &__slide {
+
+    display: inline-block;
+    height: 720px;
+    padding: 320px 130px 0;
+
+    color: #ffffff;
+  }
+
+  &__background {
+    height: 720px;
+  }
+
+  &__title {
+    width: 50%;
+    margin: 0 0 55px auto;
+
+    font: 88px $Factoria-Light;
+
+  }
+
+  &__description {
+    margin: 0 0 0 auto;
+    width: 50%;
+
+    font: 22px $Roboto-Regular;
+  }
+
+  .slick-dots {
+    position: absolute;
+    left: calc(50% - 35px);
+    bottom: 30px;
+
+    li {
+      display: inline-block;
+
+      margin-right: 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      button {
+        width: 20px;
+        height: 20px;
+
+        border: 1px solid #ffffff;
+        background: transparent;
+        border-radius: 10px;
+      }
+    }
+  }
+  .slick-dots {
+
+    .slick-active {
+
+      button {
+        background: #ffffff;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,16 @@
+<div class="upper-block">
+    {% if slider %}
+        <div class="upper-block__slider  container">
+            {% for slide in slides %}
+                <div class="upper-block__slide" style="background: url({{ slide.background_url }})  no-repeat center">
+                    <h2 class="upper-block__title">{{ slide.title }}</h2>
+                    <p class="upper-block__description">{{ slide.description }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div>
+            <div data-youtube-url="{{ video_url }}"></div>
+        </div>
+    {% endif %}
+</div>
