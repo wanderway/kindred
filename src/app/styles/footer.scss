@@ -1,0 +1,53 @@
+.footer {
+  min-height: 160px;
+
+  background: #222222;
+  color: #ffffff;
+
+  &__wrapper {
+    display: flex;
+    padding: 45px 130px;
+    justify-content: space-between;
+
+    font: 18px $Roboto-Light;
+  }
+
+  &__contact {
+    font-family: $Roboto-Regular;
+  }
+
+  &__company-number {
+    margin: 5px 0;
+  }
+
+  &__social-buttons {
+    display: flex;
+    height: 40px;
+    margin: auto 0;
+  }
+
+  &__social-button {
+    display: flex;
+    margin: 0 1px 0 0;
+
+    a {
+      display: block;
+      margin: auto 0 0 0;
+
+      opacity: .5;
+    }
+  }
+
+  &__social-button--facebook {
+    @include sprite(FB);
+  }
+  &__social-button--twitter {
+    @include sprite(Twitter);
+  }
+  &__social-button--youtube {
+    @include sprite(Youtube);
+  }
+  &__social-button--google-plus {
+     @include sprite(G);
+  }
+}
