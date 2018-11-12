@@ -1,9 +1,9 @@
-//@import "sprites/png-sprite";
+@import "sprites/png-sprite";
 @import "sprites/svg-sprite";
 //@import "sprites/svg-sprite-inline";
 
 //Mixins
-//@import "mixins/png-sprite";
+@import "mixins/png-sprite";
 @import "mixins/svg-sprite";
 
 @import "normalize";
@@ -15,5 +15,6 @@
 @import "main-content";
 @import "upper-block__slider";
 @import "displaced-block__homepage";
+@import "info-block__homepage";
 @import "footer";
 

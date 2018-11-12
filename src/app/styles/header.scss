@@ -5,7 +5,7 @@
 
   background: #ffffff;
 
-  z-index: 30;
+  z-index: 100;
 
 
   &__wrapper {
@@ -92,7 +92,9 @@
     display: flex;
     flex-wrap: wrap;
 
-    color: #ffffff;
+    background: #ffffff;
+
+    box-shadow: inset 0 -5px 0 #df2479;
   }
 
   &__brands--opened .header__brands-item {

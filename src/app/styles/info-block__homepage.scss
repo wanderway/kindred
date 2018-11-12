@@ -1,0 +1,72 @@
+.info-block {
+
+  height: 720px;
+
+  &--homePageWhiteBlock {
+  }
+
+  &__wrapper {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: -80px;
+    padding-top: 190px;
+
+    font-size: 52px;
+    font-weight: 400;
+
+    &:before {
+      position: absolute;
+      top: -235px;
+      right: 105px;
+
+      width: 0;
+      height: 470px;
+
+      border-bottom: 720px solid transparent;
+      border-left: 720px solid #e2e2e2;
+
+      transform: rotate(90deg);
+
+      z-index: 10;
+
+      content: "";
+    }
+
+    &:after {
+      position: absolute;
+      top: 360px;
+      left: -155px;
+
+      width: 150px;
+      height: 1px;
+
+      background: #c7c7c7;
+
+      transform: rotate(45deg);
+
+      content: "";
+    }
+  }
+
+  &__text-wrapper {
+    position: relative;
+
+    flex-basis: 55%;
+
+    z-index: 20;
+  }
+
+  &__logo {
+    position: relative;
+
+    @include png-sprite($icon-info-block-Logo);
+
+    z-index: 20;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+}

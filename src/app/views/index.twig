@@ -28,8 +28,14 @@
         {% include "components/displaced-block.twig" with
             {
                 'homePage' : true
-            } %}
+            }
+        %}
 
+        {% include "components/info-block.twig" with
+            {
+                'homePageWhiteBlock' : true
+            }
+        %}
     </main>
 {% endblock %}
 
