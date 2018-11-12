@@ -1,9 +1,5 @@
 .info-block {
 
-  &__careers-background {
-    @include png-sprite($icon-info-block-Homepage-careers);
-  }
-
   &__wrapper {
     position: relative;
     display: flex;
@@ -76,7 +72,7 @@
     color: #444444;
   }
 
-  &__wrapper--homePageCareersBlock {
+  &__wrapper--infoBlockWGreenAngles {
     padding-top: 80px;
 
     color: #ffffff;
@@ -130,7 +126,7 @@
     font-weight: 300;
   }
 
-  &__p {
+  &__description {
     margin: 40px 0 65px 0;
     font-size: 22px;
   }

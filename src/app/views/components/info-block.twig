@@ -6,20 +6,18 @@
                     <div class="info-block__text">We are transforming gambling to ensure players get a fair deal and a great experience.</div>
                     <button class="info-block__button  btn">Find out more</button>
                 </div>
-                <a class="info-block__logo" href="#"></a>
+                <div class="info-block__logo"></div>
             </div>
         </div>
 
-    {% elseif homePageCareersBlock %}
+    {% elseif infoBlockGreenAngles %}
 
-        <div class="info-block  container  info-block__careers-background">
-            <div class="info-block__wrapper info-block__wrapper--homePageCareersBlock">
+        <div class="info-block  container"  style="background: url({{ background_url }}) no-repeat center">
+            <div class="info-block__wrapper info-block__wrapper--infoBlockWGreenAngles">
                 <div class="info-block__text-wrapper">
-                    <h3 class="info-block__title">Individuals United</h3>
-                    <div class="info-block__p">We’re a diverse network of passionate and talented individuals<br>
-                        who are proud to be part of Kindred. As experts in our<br>
-                        different areas, we all add something special to the company.</div>
-                    <button class="info-block__button info-block__button--grey  btn"> Careers at Kindred</button>
+                    <h3 class="info-block__title">{{ title }}</h3>
+                    <div class="info-block__description">{{ description }}</div>
+                    <button class="info-block__button info-block__button--grey  btn">{{ button_text }}</button>
                 </div>
             </div>
         </div>
