@@ -1,14 +1,18 @@
 .info-block {
 
-  height: 720px;
-
-  &--homePageWhiteBlock {
+  &__careers-background {
+    @include png-sprite($icon-info-block-Homepage-careers);
   }
 
   &__wrapper {
     position: relative;
-
     display: flex;
+
+    height: 720px;
+  }
+
+  &__wrapper--homePageWhiteBlock {
+
     justify-content: space-between;
     margin-top: -80px;
     padding-top: 190px;
@@ -68,5 +72,70 @@
 
   &__text {
     margin-bottom: 40px;
+
+    color: #444444;
+  }
+
+  &__wrapper--homePageCareersBlock {
+    padding-top: 80px;
+
+    color: #ffffff;
+
+
+    &:before {
+      position: absolute;
+      top: 0;
+      right: -130px;
+
+      width: 0;
+      height: 1px;
+
+      border-bottom: 470px solid transparent;
+      border-left: 470px solid #3e7644;
+
+      transform: rotate(90deg);
+
+      opacity: .6;
+
+      z-index: 10;
+
+      content: "";
+    }
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: -130px;
+
+      width: 0;
+      height: 1px;
+
+      border-bottom: 270px solid transparent;
+      border-right: 270px solid #3e7644;
+
+      transform: rotate(-180deg);
+
+      opacity: .6;
+
+      z-index: 10;
+
+      content: "";
+    }
+  }
+
+  &__title {
+    margin: 0;
+
+    font: 66px $font-title;
+    font-weight: 300;
+  }
+
+  &__p {
+    margin: 40px 0 65px 0;
+    font-size: 22px;
+  }
+
+  &__button--grey {
+    background: #696c73;
   }
 }

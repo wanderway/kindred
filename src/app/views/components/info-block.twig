@@ -1,21 +1,29 @@
-{% if homePageWhiteBlock %}
 
-    <div class="info-block info-block--homePageWhiteBlock  container">
-        <div class="info-block__wrapper  ">
-            <div class="info-block__text-wrapper">
-                <div class="info-block__text">We are transforming gambling to ensure players get a fair deal and a great experience.</div>
-                <button class="info-block__button  btn">Find out more</button>
+    {% if homePageWhiteBlock %}
+        <div class="info-block  container">
+            <div class="info-block__wrapper  info-block__wrapper--homePageWhiteBlock">
+                <div class="info-block__text-wrapper">
+                    <div class="info-block__text">We are transforming gambling to ensure players get a fair deal and a great experience.</div>
+                    <button class="info-block__button  btn">Find out more</button>
+                </div>
+                <a class="info-block__logo" href="#"></a>
             </div>
-            <a class="info-block__logo" href="#"></a>
         </div>
-    </div>
 
-{% elseif homePageCareeersBlock %}
+    {% elseif homePageCareersBlock %}
 
-    <div class="info-block container">
-        <h3 class="info-block__title">Individuals United</h3>
-        <div class="info-block__text">We’re a diverse network of passionate and talented individuals who are proud to be part of Kindred. As experts in our different areas, we all add something special to the company.</div>
-        <button class="info-block__button  btn"> Careers at Kindred</button>
-    </div>
+        <div class="info-block  container  info-block__careers-background">
+            <div class="info-block__wrapper info-block__wrapper--homePageCareersBlock">
+                <div class="info-block__text-wrapper">
+                    <h3 class="info-block__title">Individuals United</h3>
+                    <div class="info-block__p">We’re a diverse network of passionate and talented individuals<br>
+                        who are proud to be part of Kindred. As experts in our<br>
+                        different areas, we all add something special to the company.</div>
+                    <button class="info-block__button info-block__button--grey  btn"> Careers at Kindred</button>
+                </div>
+            </div>
+        </div>
 
-{% endif %}
+    {% endif %}
+
+</div>
