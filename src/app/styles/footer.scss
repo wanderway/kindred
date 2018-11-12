@@ -9,12 +9,13 @@
     padding: 45px 130px;
     justify-content: space-between;
 
-    font: 18px $Roboto-Light;
+    font-size: 18px;
   }
 
   &__contact {
-    font-family: $Roboto-Regular;
+    font-weight: bolder;
   }
+
 
   &__company-number {
     margin: 5px 0;

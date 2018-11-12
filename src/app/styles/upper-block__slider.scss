@@ -13,7 +13,7 @@
 
     display: inline-block;
     height: 720px;
-    padding: 320px 130px 0;
+    padding: 260px 130px 0;
 
     color: #ffffff;
   }
@@ -26,7 +26,8 @@
     width: 50%;
     margin: 0 0 55px auto;
 
-    font: 88px $Factoria-Light;
+    font: 88px $font-title;
+    font-weight: 300;
 
   }
 
@@ -34,13 +35,13 @@
     margin: 0 0 0 auto;
     width: 50%;
 
-    font: 22px $Roboto-Regular;
+    font: 22px $font-base;
   }
 
   .slick-dots {
     position: absolute;
     left: calc(50% - 35px);
-    bottom: 30px;
+    bottom: 90px;
 
     li {
       display: inline-block;
